@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='en' data-ng-app="yvc">
+  <head>
+    <meta charset='utf-8'>
+    <title>Your Vote Counts</title>
+    <link href="style.css" rel='stylesheet' type='text/css'>
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body data-ng-controller="YourVoteCountsCtrl">
+    <div class='container'>
+      <div class='stack' data-ng-repeat="candidate in candidates">
+        <div data-ng-class='getColor(ballot)' data-ng-repeat='ballot in ballots[preference][candidates.indexOf(candidate)]'>&nbsp;</div>
+        <div style="text-align: center; font-weight: bold">{{candidate}}</div>
+      </div>
+    </div>
+    <button data-ng-click="incrementPref()">Increment</button>
+  </body>
+</html>
+

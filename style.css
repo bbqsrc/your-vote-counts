@@ -1,0 +1,40 @@
+.cand-0 {
+  background-color: yellow;
+}
+
+.cand-1 {
+  background-color: red;
+}
+
+.cand-2 {
+  background-color: green;
+}
+
+.cand-3 {
+  background-color: blue;
+}
+
+.cand-you {
+  background-color: white;
+}
+
+.cand-0,
+.cand-1,
+.cand-2,
+.cand-3,
+.cand-you {
+  border: 1px solid black;
+  margin: 1px;
+  width: 40px;
+  height: 10px;
+}
+
+.stack {
+  display: table-cell;
+  vertical-align: bottom;
+  width: 40px;
+}
+
+.container {
+  display: table;
+}
